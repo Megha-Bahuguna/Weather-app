@@ -1,0 +1,267 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    /* color: #01fffffa; */
+    background: url(./img/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #e26758, #303a7f);
+    box-shadow: 14px 12px 29px 0px #301f46;
+    /* background: yellowgreen; */
+    color: #fff;
+    margin: 52px auto 0;
+    border-radius: 20px;
+    padding: 34px 33px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input::placeholder{
+    color: rgb(187, 183, 183);
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #0000006b;
+    color: white;
+    padding: 10px 25px ;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+
+.search button{
+    border: 0;
+    outline: 0;
+    height: 60px;
+    box-shadow: 4px 4px 13px 0px black;
+    background: #594476;
+    border-radius: 50%;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    padding: 14px 14px;
+
+}
+
+.search button:hover{
+    background: #664f86;
+    box-shadow: 4px 4px 13px 0px black;
+    
+}
+
+.search button:active{
+    box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.614);
+
+
+}
+
+
+
+
+.search button img{
+    width: 32px;
+}
+
+
+
+/* .weather img{
+    width: 64%;
+} */
+
+.weather-icon{
+    width: 64%;
+    margin-top: -3px;
+}
+
+.weather h1{
+    font-size: 61px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 29px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-top: 2px;
+
+}
+
+
+.weather2 h1{
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 22px;
+
+}
+
+
+
+.weather2 h2{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 2px;
+
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity ,
+.wind{
+    font-size: 25px;
+}
+
+
+.weather{
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 750px){
+   
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #e26758, #303a7f);
+    box-shadow: 14px 12px 29px 0px #301f46;
+    /* background: yellowgreen; */
+    color: #fff;
+    margin: 18px 33px 6px;
+    border-radius: 20px;
+    padding: 28px 29px;
+    text-align: center;
+}
+}
+
+
+@media only screen and (max-width: 569px){
+   
+    .card {
+        width: 78%;
+        margin: 0px auto;
+        margin-top: 22px;
+    }
+
+    .weather h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .weather h2 {
+        font-size: 23px;
+        font-weight: 800;
+        color: #ffffff;
+        margin-top: 2px;
+    }
+
+    .search input {
+      
+
+        width: 22px;
+    }
+
+
+    .details {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .col {
+            
+        margin: 29px 7px;
+    }
+    
+    }
+
+    @media only screen and (max-width: 360px){
+
+        .search input::placeholder{
+            font-size: 18px;
+  }
+
+  .card {
+    width: 92%;
+    margin: 10px;
+} 
+
+.weather-icon {
+    width: 57%;
+    margin-top: 5px;
+}
+    }
+
+
+    @media only screen and (max-width: 280px){
+
+
+        .details {
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            margin-top: 50px;
+        }
+
+
+        .col {
+            
+            margin: 29px 7px;
+        }
+        .humidity, .wind {
+            font-size: 21px;
+        }
+    }
